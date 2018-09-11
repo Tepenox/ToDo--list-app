@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Roboto;
+    background: #b40000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(60deg, #000000, #b40000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(60deg, #000000, #b40000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    background-color: #b40000;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+input {
+    font-size: 18px;
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid transparent;
+    display: none;
+}
+
+input:focus {
+    background-color: white;
+    border: 3px solid #b40000;
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    height: 40px;
+    line-height: 40px;
+    /*a trick to center things in middle*/
+    color: #666;
+}
+
+li:nth-child(2n) {
+    background-color: #f7f7f7;
+}
+
+li span {
+    background-color: rgb(20, 20, 20);
+    height: 40px;
+    color: rgb(202, 201, 201);
+    text-align: center;
+    margin-right: 20px;
+    width: 0;
+    display: inline-block;
+    /*so width can work see more on w3school difference between inline inline-bock-inline */
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+    /*opacity is from 0 to 1.0*/
+}
+
+.fa-plus {
+    float: right;
+}
+
+#container {
+    margin: 100px auto;
+    background-color: #f7f7f7;
+    width: 360px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.done {
+    text-decoration: line-through;
+    color: rgb(155, 154, 154);
+}
